@@ -4,7 +4,6 @@ import SocialIcons from "./ui/SocialIcons";
 
 const Footer = () => {
   return (
-
     <div className=" w-full border-t-4 border-slate-500 dark:border-slate-100 mt-3 md:py-5">
       <footer className="rounded-lg shadow bg-[#1984c7] md:flex md:items-center md:flex-col py-3 text-white">
         <div className="flex justify-center items-center">
@@ -23,7 +22,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
+              <a
+                href="https://github.com/ZecHub/zechub?tab=readme-ov-file#zechub"
+                target="_blank"
+                className="mr-4 hover:underline md:mr-6"
+              >
                 Licensing
               </a>
             </li>
@@ -42,7 +45,14 @@ const Footer = () => {
           . All Rights Reserved.
         </span>
         <div className="mb-2">
-          <p className="text-center">Made by <Link href={'https://github.com/ManyRios'} target="_blank"><span className="color-blue font-bold hover:scale-125">Manuel Rios</span></Link></p>
+          <p className="text-center">
+            Made by{" "}
+            <Link href={"https://github.com/ManyRios"} target="_blank">
+              <span className="color-blue font-bold hover:scale-125">
+                Manuel Rios
+              </span>
+            </Link>
+          </p>
         </div>
         <div className="w-full flex justify-center items-center">
           <SocialIcons newTab={true} />
